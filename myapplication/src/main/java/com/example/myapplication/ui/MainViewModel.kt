@@ -1,0 +1,51 @@
+package com.example.myapplication.ui
+
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.myapplication.data.AppDatabase
+import com.example.myapplication.data.GalleryLoader
+import com.example.myapplication.data.GalleryRepository
+import com.example.myapplication.data.ImageEntity
+import com.example.myapplication.domain.ImageLabelerHelper
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
+
+class MainViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val repository: GalleryRepository
+
+    init {
+        val db = AppDatabase.getDatabase(application)
+        val loader = GalleryLoader(application)
+        val labeler = ImageLabelerHelper(application)
+        repository = GalleryRepository(db.imageDao(), loader, labeler)
+        
+        syncImages()
+    }
+
+    private val _searchQuery = MutableStateFlow("")
+    val searchQuery: StateFlow<String> = _searchQuery
+
+    val searchResults = _searchQuery.combine(repository.allImages) { query, all ->
+        if (query.isBlank()) all else all.filter { it.keywords.contains(query, ignoreCase = true) }
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = emptyList()
+    )
+
+    fun onSearchQueryChanged(query: String) {
+        _searchQuery.value = query
+    }
+
+    fun syncImages() {
+        viewModelScope.launch {
+            repository.syncImages()
+        }
+    }
+}
