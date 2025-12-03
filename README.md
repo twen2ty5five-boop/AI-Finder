@@ -1,65 +1,95 @@
 <p align="center"><img width="50%" src="image/aifinder.png" /></p>
-
---------------------------------------------------------------------------------
-This repository provides code resources designed to help students and researchers in AI-related fields learn AI programming.
-It was created as part of the Human–AI Collaborative Product and Service Design course in the Department of Industrial Convergence at Hanyang University.
-Our goal is to reach as many people as possible — if you find this project helpful, please consider giving it a ⭐ star!
-
-이 저장소는 AI 관련된 학과, 연구자들이 AI 코드를 배우는데 필요한 코드를 제공합니다. 
-한양대학교 산업융합학부 인간-인공지능 협업제품서비스설계 수업의 일환으로 만들어졌으며, 많은 star를 모으는 것이 목표입니다. 
-해당 프로젝트가 도움이 되었다면 star 한번 씩 부탁드립니다.
+<p align="center">
+  <h1 align="center">🔍 AI Finder</h1>
+  <p align="center">
+    <strong>Your Gallery, Reimagined with On-Device AI</strong>
+    <br />
+    <br />
+    <a href="#features">Features</a>
+    ·
+    <a href="#tech-stack">Tech Stack</a>
+    ·
+    <a href="#download">Download</a>
+  </p>
+</p>
 
 <br/>
 
-## Table of Contents
+## 🚀 Introduction
 
-#### 1. TensorFlow
-* [텐서 연산, 자동미분](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/01_basic_operations/main.py)
-* [기본 선형회귀 구현](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/02_linear_regression/main.py)
-* [MLP 분류 모델](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/03_classification_mlp/main.py)
-* [CNN 이미지 분류](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/04_cnn_mnist/main.py)
-* [tf.data 파이프라인 예제](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/05_data_pipeline/main.py)
-* [모델 저장/ 로드 예제](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/06_save_and_load_model/main.py)
-* [종합 파이프라인 예제](https://github.com/twen2ty5five-boop/ASMR/blob/main/contents/tensorflow/baiscs_and_pipelines/main.py)
+**AI Finder** is a next-generation Android gallery application that brings the power of Artificial Intelligence directly to your device. 
 
-#### 2. PyTorch
-* [파이토치 연산, 자동미분](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/01_basic_autograd/main.py)
-* [기본 선형회귀 구현](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/02_linear_regression/main.py)
-* [MLP 분류 모델](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/03_classification_mlp/main.py)
-* [CNN 이미지 분류](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/04_classification_cnn/main.py)
-* [기본 DataLoader, 파이프라인 예제](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/05_data_pipeline_basic/main.py)
-* [기본 DataLoader, 파이프라인 확장 예제](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/05_2_data_pipeline_advanced/main.py)
-* [모델 저장/ 로드 예제](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/06_save_and_load_model/main.py)
-* [종합 파이프라인 예제](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/07_basics_and_pipelines/main.py)
-* [종합 파이프라인 확장 예제 (+그래프)](https://github.com/twen2ty5five-boop/ASMR/tree/main/contents/pytorch/07_2_basics_and_pipelines_add_graph/main.py)
+Forget scrolling through thousands of photos to find that one picture of your dog. **AI Finder** automatically scans your gallery, recognizes objects using **Google ML Kit**, and tags them with relevant keywords—all without a single byte leaving your phone.
+
+Experience the future of photo search. **Fast. Private. Intelligent.**
+
 <br/>
 
-## Getting Started
+## ✨ Features
+
+*   🧠 **On-Device AI Intelligence**
+    *   Powered by Google ML Kit for offline, privacy-focused image labeling.
+    *   Recognizes objects like "Dog", "Food", "Sky", "Beach", and more.
+
+*   ⚡ **Instant Search**
+    *   Indexed locally using **Room Database** for millisecond-latency search results.
+    *   Type "Cat" and see results instantly.
+
+*   🎨 **Modern & Fluid UI**
+    *   Built entirely with **Jetpack Compose** for a smooth, beautiful user experience.
+    *   Dynamic grid layout with keyword previews.
+
+*   🔒 **Privacy First**
+    *   100% offline processing. Your photos never touch a server.
+
+<br/>
+
+## 🛠 Tech Stack
+
+This project is built with modern Android development best practices:
+
+*   **Language**: [Kotlin](https://kotlinlang.org/)
+*   **UI**: [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material3)
+*   **AI/ML**: [Google ML Kit](https://developers.google.com/ml-kit) (Image Labeling)
+*   **Database**: [Room](https://developer.android.com/training/data-storage/room) (SQLite)
+*   **Image Loading**: [Coil](https://coil-kt.github.io/coil/)
+*   **Async**: [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html)
+*   **Architecture**: MVVM (Model-View-ViewModel)
+
+<br/>
+
+## 📥 Download
+
+Ready to try it out? Download the latest APK below.
+
+<p align="center">
+  <a href="YOUR_GITHUB_LINK_HERE">
+    <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50" />
+  </a>
+</p>
+
+> **Note**: This is a demo application. You may need to allow installation from unknown sources.
+
+<br/>
+
+## 🏁 Getting Started
+
+To build this project locally:
+
 ```bash
-$ git clone https://github.com/twen2ty5five-boop/ASMR.git
-$ cd ASMR/contents/{PROJECT_PATH}
-$ python main.py
+# 1. Clone the repository
+$ git clone https://github.com/YOUR_USERNAME/ai-finder.git
+
+# 2. Open in Android Studio
+$ cd ai-finder
+
+# 3. Sync Gradle and Run 'myapplication'
 ```
 
 <br/>
 
-## Dependencies
+## 🤝 Contributing
 
-To run these examples, install the following dependencies:
+Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project!
 
-```bash
-pip install torch tensorflow numpy matplotlib 
-```
-
-Or manually install:
-
-#### * [Python 3.8+](https://python.org/downloads)
-#### * [PyTorch](https://pytorch.org)
-#### * [TensorFlow](https://tensorflow.org)
-#### * [NumPy](https://numpy.org)
-#### * [Matplotlib](https://matplotlib.org)
-
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=twen2ty5five-boop/ASMR&type=date&legend=top-left)](https://www.star-history.com/#twen2ty5five-boop/ASMR&type=date&legend=top-left)
