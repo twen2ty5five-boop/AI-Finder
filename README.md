@@ -1,4 +1,4 @@
-<p align="center"><img width="50%" src="image/aifinder.png" /></p>
+<p align="center"><img width="80%" src="image/aifinder.png" /></p>
 <p align="center">
   <h1 align="center">🔍 AI Finder</h1>
   <p align="center">
