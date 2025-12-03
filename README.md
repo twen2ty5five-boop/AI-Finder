@@ -71,7 +71,7 @@ This project is built with modern Android development best practices:
 Ready to try it out? Download the latest APK below.
 
 <p align="center">
-  <a href="https://github.com/twen2ty5five-boop/AI-Finder/tree/main/apk/ai-finder.apk">
+  <a href="https://raw.githubusercontent.com/twen2ty5five-boop/AI-Finder/refs/heads/main/apk/ai-finder.apk">
     <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50" />
   </a>
 </p>
