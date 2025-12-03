@@ -4,12 +4,20 @@
   <p align="center">
     <strong>Your Gallery, Reimagined with On-Device AI</strong>
     <br />
-    <br />
-    <a href="#features">Features</a>
-    ·
-    <a href="#tech-stack">Tech Stack</a>
-    ·
-    <a href="#download">Download</a>
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;">
+      <img src="image/before.jpg" width="250"/>
+    </td>
+    <td align="center" style="border: none;">
+      <img src="image/after.jpg" width="250"/>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td align="center" style="border: none;"><strong>Before</strong></td>
+    <td align="center" style="border: none;"><strong>After</strong></td>
+  </tr>
+</table>
   </p>
 </p>
 
