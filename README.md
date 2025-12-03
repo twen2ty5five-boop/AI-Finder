@@ -1,4 +1,4 @@
-<p align="center"><img width="50%" src="logo/logo.png" /></p>
+<p align="center"><img width="50%" src="image/aifinder.png" /></p>
 
 --------------------------------------------------------------------------------
 This repository provides code resources designed to help students and researchers in AI-related fields learn AI programming.
