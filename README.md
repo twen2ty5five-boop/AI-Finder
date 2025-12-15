@@ -31,6 +31,17 @@ Forget scrolling through thousands of photos to find that one picture of your do
 
 Experience the future of photo search. **Fast. Private. Intelligent.**
 
+This project is the result of a final project conducted as part of the Human–AI Collaborative Product and Service Design course offered by the Department of Industrial Convergence at Hanyang University during the Fall 2025 semester.
+The supervising professor for this course is Professor Cheol-Hyun Jung of the Department of Industrial Convergence at Hanyang University (inbass@hanyang.ac.kr).
+The code and documentation are open source under the MIT License, and may be freely referenced or used; however, all risks arising from such use must be borne solely by the user.
+
+
+**AI Finder**는 인공지능의 강력한 기능을 사용자의 기기에서 직접 제공하는 차세대 안드로이드 갤러리 애플리케이션입니다.
+수천 장의 사진을 하나하나 스크롤하며 반려견 사진을 찾을 필요가 없습니다. **AI Finder**는 **Google ML Kit**을 활용해 갤러리를 자동으로 스캔하고, 사물을 인식해 관련 키워드로 태그를 생성하며, 이 모든 과정은 단 한 바이트의 데이터도 기기 밖으로 전송하지 않고 이루어집니다.
+사진 검색의 미래를 경험해 보세요. **빠르고. 안전하며. 지능적입니다.**
+
+본 프로젝트는 한양대학교 산업융합학부 인간-인공지능 협업 제품 서비스 설계 수업(2025년 가을학기)의 기말 프로젝트 활동으로 진행된 결과물입니다. 본 수업의 지도 교수는 한양대 산업융합학부 정철현 교수(inbass@hanyang.ac.kr) 입니다. 코드와 문서는 오픈소스(MIT 라이센스)이므로 자유롭게 참조/사용하시되 사용으로 인한 모든 리스크는 스스로 감당하셔야 합니다.
+
 <br/>
 
 ## ✨ Features
